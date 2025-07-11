@@ -5,7 +5,7 @@ Built using HTML, CSS, and JavaScript, this landing page includes a header, foot
 
 📌 Project Overview
 
-. The Landing Page is designed to present a professional first impression for a vehicle company or service. It includes:
+The Landing Page is designed to present a professional first impression for a vehicle company or service. It includes:
 
 . A responsive layout
 
