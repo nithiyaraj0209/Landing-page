@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vehicle Sales Platform</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      background: url("bg.webp") no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(126, 56, 56, 0.6); /* Light overlay */
+      z-index: -1;
+    }
+
+    header {
+      background-color: #444;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: whitesmoke;
+      text-align: center;
+      max-width: 700px;
+      padding: 20px;
+    }
+
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      font-size: 1rem;
+      background-color: #f39c12;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #e67e22;
+    }
+
+    .collections {
+      padding: 60px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: transparent;
+    }
+
+    .collection {
+      background: white;
+      border-radius: 10px;
+      margin: 15px;
+      max-width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .collection img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .collection h3 {
+      padding: 15px;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .collection:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h2 {
+        font-size: 2rem;
+      }
+
+      .collections {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Nila Vehicles</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#collections">Vehicles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Find Your Perfect Ride</h2>
+      <p>
+  Whether you're looking for a fuel-efficient scooter for city rides,<br>
+  a powerful bike for thrilling road trips,<br>
+  or a comfortable car for your family – we've got the perfect vehicle for you.
+</p>
+      <button class="btn" onclick="shopNow()">Explore Now</button>
+    </div>
+  </section>
+
+  <!-- Vehicle Collections -->
+  <section class="collections" id="collections">
+    <div class="collection">
+      <img src="Scooter.jpg" alt="Scooters" />
+      <h3>Scooters</h3>
+    </div>
+    <div class="collection">
+      <img src="bike.jpg" alt="Bikes" />
+      <h3>Bikes</h3>
+    </div>
+    <div class="collection">
+      <img src="car.jpg" alt="Cars" />
+      <h3>Cars</h3>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2025 Nila Vehicle Sales Platform. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function shopNow() {
+      alert("Welcome to NilaHub!\n\nEMI Available \nCall us to book a test ride:\n 📞 +91 xy098 45xx2\n📧 sales@nilahub.com");
+    }
+  </script>
+
+</body>
+</html>
